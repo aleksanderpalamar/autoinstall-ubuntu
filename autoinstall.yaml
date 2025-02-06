@@ -12,6 +12,12 @@ autoinstall:
   timezone: "America/Sao_Paulo"
   keyboard:
     layout: br
+
+  storage:
+    layout:
+      name: direct
+      match:
+        patch: /dev/nvme0n1
   
   network:
     version: 2
