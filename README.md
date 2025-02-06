@@ -36,6 +36,7 @@ autoinstall:
     hostname: milleniumfalcon
 ```
 - realname, username e password: Configuram o usuário padrão que será criado. A senha deve estar em formato hash (por exemplo, SHA-512).
+  - Gere um hash seguro, por exemplo, com `mkpasswd --method=SHA-512`.	
 - hostname: Define o nome do host para o sistema instalado.
 
 3. Localidade, Fuso Horário e Layout do Teclado
