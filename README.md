@@ -57,7 +57,7 @@ autoinstall:
   network:
     version: 2
     ethernets:
-      enp0s5:
+      enp0s3:
         dhcp4: false
         addresses:
           - 192.168.0.2/24
