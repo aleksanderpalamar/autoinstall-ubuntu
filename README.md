@@ -32,8 +32,8 @@ autoinstall:
   identity:
     realname: 'Aleksander Palamar'
     username: palamar
-    password: '$6$bI8p194bQKPJcb4r$bfW73Ff9cDHf4wyEZIhEbz00fGm1fKrD/971QQBnU225gpxifAKmrYafhN/c.aMuJhuHPvHqZO3NYw1oB/PtD/' # Gere um hash seguro, por exemplo, com mkpasswd --method=SHA-512
-    hostname: milleniumfalcon
+    password: '$6$ql87TIbEht2WC0X1$.09WphKfu0VCx6ZYGyk5kq5kmVQQEkjNb8HAKWc6/gX9NuJQzDCRDK/hsb3bovoDDoga.4s9E2N1O5N0sAcND1' # Gere um hash seguro, por exemplo, com mkpasswd --method=SHA-512
+    hostname: desktop-ubuntu
 ```
 - realname, username e password: Configuram o usuário padrão que será criado. A senha deve estar em formato hash (por exemplo, SHA-512).
   - Gere um hash seguro, por exemplo, com `mkpasswd --method=SHA-512`.	
