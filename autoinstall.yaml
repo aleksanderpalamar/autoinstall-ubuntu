@@ -1,0 +1,63 @@
+#cloud-config
+autoinstall:
+  version: 1
+
+  identity:
+    realname: 'Aleksander Palamar'
+    username: palamar
+    password: '$6$bI8p194bQKPJcb4r$bfW73Ff9cDHf4wyEZIhEbz00fGm1fKrD/971QQBnU225gpxifAKmrYafhN/c.aMuJhuHPvHqZO3NYw1oB/PtD/' # Gere um hash seguro, por exemplo, com mkpasswd --method=SHA-512
+    hostname: milleniumfalcon
+
+  locale: pt_BR.UTF-8
+  timezone: "America/Sao_Paulo"
+  keyboard:
+    layout: br
+  
+  network:
+    version: 2
+    ethernets:
+      enp0s5:
+        dhcp4: false
+        addresses:
+          - 192.168.0.2/24
+        gateway4: 192.168.0.1
+        nameservers:
+          addresses:
+            - 1.1.1.3
+            - 1.0.0.3
+  
+  packages:
+    - docker.io
+    - nodejs
+    - npm
+    - git
+    - curl
+    - wget
+  
+  snaps:
+    - name: code
+      channel: stable
+      classic: true
+    - name: slack
+      channel: stable
+    - name: obsidian
+      channel: stable
+    - name: postman
+      channel: stable
+    - name: insomnia
+      channel: stable
+    - name: discord
+      channel: stable
+    - name: spotify
+      channel: stable
+      classic: false
+    - name: steam
+      channel: stable
+  
+  codecs:
+    install: true
+  drivers:
+    install: true
+  updates: all
+  shutdown: reboot
+    
