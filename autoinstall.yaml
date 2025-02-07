@@ -14,24 +14,10 @@ autoinstall:
     layout: br
 
   storage:
-  config:
-    - id: disk0
-      type: disk
-      ptable: gpt
-      path: /dev/nvme0n1
-      wipe: superblock-recursive
-    - id: part1
-      type: partition
-      device: disk0
-      size: -1
-    - id: fs_root
-      type: format
-      volume: part1
-      fstype: ext4
-    - id: mount_root
-      type: mount
-      device: fs_root
-      path: /
+    layout:
+      name: direct
+      match:
+        path: /dev/nvme0n1p1
   
   network:
     version: 2
